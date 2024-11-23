@@ -3,48 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo NoThInc</title>
+    <title>Nothinc.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: #FFF;
+        html {
+            scroll-behavior: smooth;
         }
-
-        .logo {
-            font-family: 'Roboto', sans-serif;
-            font-size: 3rem;
-            font-weight: bold;
-            color: #000;
-            text-transform: uppercase;
-            text-align: center;
-            letter-spacing: 0.2rem;
-            position: relative;
-            display: flex;
-            align-items: center;
+        .bg-custom-dark {
+            background-color: #0a0a0a;
         }
-
-        .lightning {
-            margin-right: 0px;
-            width: 50px;
-            height: 50px;
+        .text-electric-blue {
+            color: #0066ff;
         }
-
-        .lightning img {
-            width: 60%;
-            height: 80%;
+        .border-electric-blue {
+            border-color: #0066ff;
         }
     </style>
 </head>
-<body>
-    <div class="logo">
-        <div class="lightning">
-            <img src="https://i.ibb.co/hCRcWrn/Pina-Clipart-com-lightning-bolt-clip-art-2980713.png" alt="Logo de relámpago">
+<body class="bg-custom-dark text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-electric-blue text-3xl">⚡</span>
+                    <span class="text-2xl font-bold ml-2">NOTHINC.</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#servicios" class="hover:text-electric-blue transition-colors">Servicios</a>
+                    <a href="#portafolio" class="hover:text-electric-blue transition-colors">Portafolio</a>
+                    <a href="#about" class="hover:text-electric-blue transition-colors">About Us</a>
+                    <a href="#contacto" class="hover:text-electric-blue transition-colors">Contacto</a>
+                </div>
+            </div>
         </div>
-        NoThInc.
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold mb-4">NOTHINC.</h1>
+            <p class="text-xl text-gray-400">Creamos experiencias digitales extraordinarias</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-6 border border-gray-800 rounded-lg hover:border-electric-blue transition-colors">
+                    <div class="text-electric-blue text-3xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-4">Desarrollo Web</h3>
+                    <p class="text-gray-400">Sitios web modernos y responsivos con las últimas tecnologías</p>
+                </div>
+                <div class="p-6 border border-gray-800 rounded-lg hover:border-electric-blue transition-colors">
+                    <div class="text-electric-blue text-3xl mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-4">Diseño UI/UX</h3>
+                    <p class="text-gray-400">Interfaces intuitivas y experiencias de usuario excepcionales</p>
+                </div>
+                <div class="p-6 border border-gray-800 rounded-lg hover:border-electric-blue transition-colors">
+                    <div class="text-electric-blue text-3xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-4">Apps Móviles</h3>
+                    <p class="text-gray-400">Aplicaciones nativas y multiplataforma de alto rendimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Portafolio</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Proyecto 1 -->
+                <div class="relative group">
+                    <img src="/api/placeholder/600/400" alt="Proyecto 1" class="w-full rounded-lg"/>
+                    <div class="absolute inset-0 bg-electric-blue bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg"></div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="relative group">
+                    <img src="/api/placeholder/600/400" alt="Proyecto 2" class="w-full rounded-lg"/>
+                    <div class="absolute inset-0 bg-electric-blue bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">About Us</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-400 mb-8">
+                    Somos un equipo apasionado por la innovación y la tecnología. Nos especializamos en crear soluciones digitales que transforman ideas en realidades excepcionales.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-electric-blue">100+</div>
+                        <p class="text-gray-400 mt-2">Proyectos Completados</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-electric-blue">50+</div>
+                        <p class="text-gray-400 mt-2">Clientes Felices</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-electric-blue">5+</div>
+                        <p class="text-gray-400 mt-2">Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Contacto</h2>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Nombre" class="w-full p-3 bg-custom-dark border border-gray-800 rounded-lg focus:border-electric-blue focus:outline-none"/>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email" class="w-full p-3 bg-custom-dark border border-gray-800 rounded-lg focus:border-electric-blue focus:outline-none"/>
+                    </div>
+                    <div>
+                        <textarea placeholder="Mensaje" rows="4" class="w-full p-3 bg-custom-dark border border-gray-800 rounded-lg focus:border-electric-blue focus:outline-none"></textarea>
+                    </div>
+                    <button class="w-full bg-electric-blue text-white py-3 rounded-lg hover:bg-blue-600 transition-colors">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Nothinc. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
