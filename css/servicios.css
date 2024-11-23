@@ -7,6 +7,14 @@
     position: absolute;
 
 }
+
+/* Si está siendo vista desde un teléfono, agrandamos el height del section */
+@media (max-width: 800px) {
+    .servicios-section{
+        height: 120vh;
+    }
+}
+
 .servicios-section h2{
     color: #fff;
     font-size: 4rem;
