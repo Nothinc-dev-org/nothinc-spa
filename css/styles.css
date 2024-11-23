@@ -23,3 +23,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+section {
+    width: 100vw; /* 100% del ancho de la pantalla */
+    height: 100vh; /* 100% de la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
