@@ -1,0 +1,18 @@
+/* eliminamos paggings y boxes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Modificamos dimenciones de rem  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  background-color: #0f0f0f;
+}
+
