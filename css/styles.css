@@ -8,11 +8,18 @@
 /* Modificamos dimenciones de rem  */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
-    background-color: #0A0A0A;
+}
+
+
+
+/* Eliminamos la barra de scroll */
+body::-webkit-scrollbar {
+    display: none;
 }
 
