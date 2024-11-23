@@ -5,6 +5,10 @@
     background-color: #000; /* Fondo de la navbar */
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    /* Hacer la navbar fija */
+    position: fixed;
+    width: 100vw;
 }
 
 .navbar-brand {
@@ -13,17 +17,18 @@
 }
 
 .navbar-brand img {
-    margin-top:1rem;
-    margin-bottom:1rem;
-    margin-left: 15rem;
+    margin-left: 10vw;
     width: 15rem;
-    margin-right: 10px;
 }
 
 .navbar-menu {
     list-style: none;
     display: flex;
     gap: 20px;
+
+
+    /* margin-right: 15rem; */
+    margin-right: 10vw;
 }
 
 .navbar-menu li a {
@@ -39,7 +44,7 @@
 }
 
 /* Hacer responsive la navbar */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .navbar-menu {
         display: none;
     }
