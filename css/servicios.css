@@ -9,7 +9,7 @@
 }
 
 /* Si está siendo vista desde un teléfono, agrandamos el height del section */
-@media (max-width: 800px) {
+@media (orientation: portrait) {
     .servicios-section{
         height: 120vh;
     }
@@ -28,7 +28,7 @@
     align-items: center;
 
     /*  Lo centramos verticalmente, a la mitad exacta del section */
-    margin-top: 40vh;
+    margin-top: 38vh;
     transform: translateY(-50%);
 
 }
