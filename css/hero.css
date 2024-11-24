@@ -2,10 +2,6 @@
     height: 100vh;
     width: 100vw;
     
-    /* position: fixed;
-    left: 0vw; */
-
-    /* Centramos su contenido */
     display: flex;
     justify-content: center;
     align-items: center;
