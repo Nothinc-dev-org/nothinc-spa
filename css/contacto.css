@@ -1,0 +1,43 @@
+.contacto-section {
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #090909;
+}
+
+/* Si está siendo vista desde un teléfono, agrandamos el height del section */
+@media (orientation: portrait) {
+    .contacto-section {
+        height: 120vh;
+    }
+}
+
+.contacto-section h2 {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vh;
+    margin-bottom: 2vh;
+}
+
+.contacto-section p {
+    color: #ffffff93;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
