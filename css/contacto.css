@@ -41,3 +41,8 @@
     align-items: center;
     
 }
+
+.contacto-section p a {
+    color: #1962ff;
+    text-decoration: none;
+}

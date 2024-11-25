@@ -1,9 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambiado a "es" para reflejar el idioma principal del contenido -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nothinc.</title>
+    <title>Nothinc. - Innovación sin complicaciones</title> <!-- Título optimizado con palabras clave -->
+    
+    <!-- Meta Descripción -->
+    <meta name="description" content="Nothinc. ofrece servicios de desarrollo web, diseño UI/UX y apps móviles con un enfoque innovador y simple. Conócenos y transforma tus ideas.">
+    
+    <!-- Meta Keywords (opcional, no tan relevante para SEO actual) -->
+    <meta name="keywords" content="desarrollo web, diseño UI/UX, apps móviles, innovación, servicios digitales">
+    
+    <!-- Meta para Indexación -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para Redes Sociales -->
+    <meta property="og:title" content="Nothinc. - Innovación sin complicaciones">
+    <meta property="og:description" content="Servicios de desarrollo web, diseño UI/UX y aplicaciones móviles. Transformamos tus ideas en soluciones digitales.">
+    <meta property="og:image" content="images/PS_BLACK_2_UHD.png"> <!-- Cambiar a una URL absoluta si el sitio está en producción -->
+    <meta property="og:url" content="https://nothinc.mx"> <!-- Cambiar a la URL real -->
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nothinc. - Innovación sin complicaciones">
+    <meta name="twitter:description" content="Transforma tus ideas en soluciones digitales con nuestros servicios de desarrollo web, diseño UI/UX y apps móviles.">
+    <meta name="twitter:image" content="images/PS_BLACK_2_UHD.png">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -14,97 +38,67 @@
     <link rel="stylesheet" href="css/footer.css">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-brand">
-            <a href="#">
-                <img src="images/PS_BLACK_2_UHD.png" alt="Nothinc Logo" class="logo">
+            <a href="#hero">
+                <img src="images/PS_BLACK_2_UHD.png" alt="Logo de Nothinc" class="logo">
             </a>
         </div>
         <ul class="navbar-menu">
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
-            <!-- <li><a href="#about">About Us</a></li> -->
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#servicios" title="Conoce nuestros servicios">Servicios</a></li>
+            <li><a href="#portafolio" title="Explora nuestro portafolio">Portafolio</a></li>
+            <li><a href="#contacto" title="Contáctanos">Contacto</a></li>
         </ul>
     </nav>
+    
     <!-- Hero Section -->
-     <section class="hero-section" id="#">
+    <section class="hero-section" id="hero">
         <div class="hero-container">
-            <img src="images/PS_BLACK_2_UHD.png" alt="Nothinc Logo">
+            <img src="images/PS_BLACK_2_UHD.png" alt="Logo Nothinc. Innovación sin complicaciones">
             <p>Nothing complicated. Just innovation.</p>
         </div>
-     </section>
+    </section>
 
-    <!-- Servicios Section-->
-     <section class="servicios-section" id="servicios">
+    <!-- Servicios Section -->
+    <section class="servicios-section" id="servicios">
         <h2>Servicios</h2>
         <div class="servicios-section-cards-container">
             <div class="card">
-                <div class="icon">💻</div>
+                <div class="icon" aria-hidden="true">💻</div>
                 <h3>Desarrollo Web</h3>
-                <p>Sitios web modernos y responsivos con las últimas tecnologías</p>
-              </div>
-              <div class="card">
-                <div class="icon">🎨</div>
+                <p>Sitios web modernos y responsivos con las últimas tecnologías.</p>
+            </div>
+            <div class="card">
+                <div class="icon" aria-hidden="true">🎨</div>
                 <h3>Diseño UI/UX</h3>
-                <p>Interfaces intuitivas y experiencias de usuario excepcionales</p>
-              </div>
-              <div class="card">
-                <div class="icon">📱</div>
+                <p>Interfaces intuitivas y experiencias de usuario excepcionales.</p>
+            </div>
+            <div class="card">
+                <div class="icon" aria-hidden="true">📱</div>
                 <h3>Apps Móviles</h3>
-                <p>Aplicaciones multiplataforma de alto rendimiento</p>
-              </div>
+                <p>Aplicaciones multiplataforma de alto rendimiento.</p>
+            </div>
         </div>
-     </section>
-
-
-    <!-- Portafolio Section-->
-    <section class="portafolio-section" id="portafolio">
-        <h2>Portafolio</h2>
-
-        <!-- <div class="portafolio-cards-container">
-            <div class="card">
-                <img src="images/placeholder.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Descripción del proyecto 1</p>
-            </div>
-            <div class="card">
-                <img src="images/placeholder.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Descripción del proyecto 2</p>
-            </div>
-            <div class="card">
-                <img src="images/placeholder.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Descripción del proyecto 3</p>
-            </div>
-        </div> -->
-        <span>
-            En construcción...
-        </span>
     </section>
 
-    <!-- About Us Section-->
-    <!-- <section class="about-section" id="about">
-        <h2>About Us</h2>
-        <p>Descripción de la empresa</p>
-    </section> -->
+    <!-- Portafolio Section -->
+    <section class="portafolio-section" id="portafolio">
+        <h2>Portafolio</h2>
+        <p>Estamos trabajando para ofrecerte lo mejor. ¡Próximamente!</p>
+    </section>
 
-    <!-- Contacto Section-->
-
+    <!-- Contacto Section -->
     <section class="contacto-section" id="contacto">
         <h2>Contacto</h2>
-        <p>contact@nothinc.mx</p>
+        <p>Para más información, escríbenos a: &nbsp;<a href="mailto:contact@nothinc.mx">contact@nothinc.mx</a></p>
     </section>
     
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Nothinc. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
