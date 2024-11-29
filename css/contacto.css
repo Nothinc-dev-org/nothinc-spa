@@ -10,39 +10,28 @@
     background-color: #090909;
 }
 
-/* Si está siendo vista desde un teléfono, agrandamos el height del section */
-@media (orientation: portrait) {
-    .contacto-section {
-        height: 120vh;
-    }
-}
-
-.contacto-section h2 {
-    color: #fff;
-    font-size: 4rem;
-    text-align: center;
-    margin: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -5vh;
-    margin-bottom: 2vh;
-}
-
+/* Cambiamos el layout del texto en mobile */
 .contacto-section p {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    justify-items: center;
+    align-items: center;
+
     color: #ffffff93;
     font-size: 1.7rem;
     text-align: center;
     margin: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .contacto-section p a {
     color: #1962ff;
     text-decoration: none;
+}
+
+/* En desktop, juntamos los elementos en la misma línea */
+@media (min-width: 768px) {
+    .contacto-section p {
+        grid-template-columns: auto auto; /* Dos columnas: texto y link */
+        gap: 0.5rem; /* Espaciado entre las columnas */
+    }
 }
