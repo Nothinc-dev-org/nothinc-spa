@@ -2,16 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000; /* Fondo de la navbar */
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    padding: 20px 20px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
 
     /* Hacer la navbar fija */
     position: fixed;
     width: 100vw;
     height: 8vh;
+    z-index: 1000;
+}
 
-    z-index: 1000;    
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
@@ -20,8 +26,15 @@
 }
 
 .navbar-brand img {
-    margin-left: 10vw;
-    width: 15rem;
+    margin-left: 5vw; /* Reducido el margen izquierdo para dar más espacio */
+    width: 20rem; /* Aumentado a 20rem */
+    transition: transform 0.3s ease;
+    height: auto; /* Mantener proporciones */
+    object-fit: contain; /* Asegurar que la imagen se vea bien */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05); /* Efecto de escala sutil al pasar el mouse */
 }
 
 .navbar-menu {
@@ -37,9 +50,12 @@
 .navbar-menu li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    transition: all 0.3s ease;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem); /* Aumentado aún más el tamaño */
+    font-weight: 500;
+    padding: 8px 15px; /* Más espacio alrededor */
+    border-radius: 4px;
+    letter-spacing: 0.5px; /* Mejor espaciado entre letras */
 }
 
 .navbar-menu li a:hover {
