@@ -65,19 +65,39 @@
     <section class="hero-section" id="hero">
         <div class="hero-carousel">
             <div class="hero-slide">
-                <img src="https://images.unsplash.com/photo-1689005047173-b43ff68072ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvbmRvcyUyMGRlJTIwcGFudGFsbGElMjBhYnN0cmFjdG9zfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Nothinc proyecto de iluminación">
+                <img src="https://images.unsplash.com/photo-1689005047173-b43ff68072ed?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvbmRvcyUyMGRlJTIwcGFudGFsbGElMjBhYnN0cmFjdG9zfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+                    alt="Nothinc proyecto de iluminación">
             </div>
             <div class="hero-slide">
-                <img src="https://images.unsplash.com/photo-1663970206579-c157cba7edda?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBhYnN0cmFjdG98ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" alt="Nothinc proyecto de ruleta digital">
+                <img src="https://images.unsplash.com/photo-1663970206579-c157cba7edda?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBhYnN0cmFjdG98ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000"
+                    alt="Nothinc proyecto de ruleta digital">
             </div>
             <div class="hero-slide">
-                <img src="https://p4.wallpaperbetter.com/wallpaper/578/70/509/blue-light-blaze-1920x1080-hdtv-1080p-looking-for-dark-abstract-art-black-hd-art-wallpaper-preview.jpg" alt="Identidad visual de Nothinc">
+                <img src="https://p4.wallpaperbetter.com/wallpaper/578/70/509/blue-light-blaze-1920x1080-hdtv-1080p-looking-for-dark-abstract-art-black-hd-art-wallpaper-preview.jpg"
+                    alt="Identidad visual de Nothinc">
             </div>
         </div>
+        <div class="hero-gradient"></div>
         <div class="hero-overlay"></div>
+        <div class="hero-particles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="hero-container">
             <img src="images/PS_BLACK_2_UHD.png" alt="Logo Nothinc. Innovación sin complicaciones">
             <p>Nothing complicated. Just innovation.</p>
+            <p class="hero-quote">"Co-creamos experiencias digitales que impulsan marcas sin fricción."</p>
+            <div class="hero-cta">
+                <a href="#servicios" class="hero-btn primary-btn">Explorar servicios</a>
+                <a href="#contacto" class="hero-btn secondary-btn">Agenda una llamada</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+            <span class="scroll-line"></span>
         </div>
     </section>
 
@@ -86,87 +106,121 @@
         <div class="servicios-container">
             <h2 class="section-title">Nuestros Servicios de Consultoría</h2>
             <p class="section-subtitle">Soluciones tecnológicas a medida para impulsar tu negocio</p>
-            
+
             <div class="servicios-grid">
                 <!-- Fila 1 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-laptop-code"></i>
+                <div class="servicio-card reveal-on-scroll"
+                    style="--servicio-illustration: url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=900&q=60'); --servicio-accent: #1f7bff;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Comercio digital</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>E-Commerce</h3>
+                        <p>Tiendas en línea personalizadas con pasarelas de pago seguras, gestión de inventario y
+                            experiencia de compra optimizada.</p>
+                        <ul class="servicio-features">
+                            <li>Plataformas personalizables</li>
+                            <li>Integración de pagos</li>
+                            <li>Gestión de inventario</li>
+                        </ul>
                     </div>
-                    <h3>E-Commerce</h3>
-                    <p>Tiendas en línea personalizadas con pasarelas de pago seguras, gestión de inventario y experiencia de compra optimizada.</p>
-                    <ul class="servicio-features">
-                        <li>Plataformas personalizables</li>
-                        <li>Integración de pagos</li>
-                        <li>Gestión de inventario</li>
-                    </ul>
                 </div>
 
-                <div class="servicio-card destacado">
-                    <div class="servicio-icon">
-                        <i class="fas fa-cash-register"></i>
+                <div class="servicio-card destacado reveal-on-scroll"
+                    style="--servicio-illustration: url('https://imgs.search.brave.com/vpzgdcAdZS1Tbpl81OLTcxuK_tjTwH-mOlCJ92HSaQ4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zZXJ2/YW5nb3AubXgvd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDIv/cHVudG9zZGV2ZW50/YS0xLnBuZw'); --servicio-accent: #00f2fe;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Experiencia en tienda</span>
+                        <span class="badge-popular">Popular</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-cash-register"></i>
+                        </div>
+                        <h3>Puntos de Venta</h3>
+                        <p>Sistemas POS modernos que se integran con tu inventario, facturación y reportes en tiempo
+                            real.</p>
+                        <ul class="servicio-features">
+                            <li>Facturación electrónica</li>
+                            <li>Control de inventario</li>
+                            <li>Reportes en tiempo real</li>
+                        </ul>
                     </div>
-                    <h3>Puntos de Venta</h3>
-                    <p>Sistemas POS modernos que se integran con tu inventario, facturación y reportes en tiempo real.</p>
-                    <ul class="servicio-features">
-                        <li>Facturación electrónica</li>
-                        <li>Control de inventario</li>
-                        <li>Reportes en tiempo real</li>
-                    </ul>
-                    <span class="badge-popular">Popular</span>
                 </div>
 
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-boxes"></i>
+                <div class="servicio-card reveal-on-scroll"
+                    style="--servicio-illustration: url('https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=900&q=60'); --servicio-accent: #8c5bff;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Operaciones</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3>Gestión de Inventarios</h3>
+                        <p>Solución completa para el control y seguimiento de inventario con alertas y reportes
+                            automatizados.</p>
+                        <ul class="servicio-features">
+                            <li>Control de stock</li>
+                            <li>Alertas automáticas</li>
+                            <li>Análisis predictivo</li>
+                        </ul>
                     </div>
-                    <h3>Gestión de Inventarios</h3>
-                    <p>Solución completa para el control y seguimiento de inventario con alertas y reportes automatizados.</p>
-                    <ul class="servicio-features">
-                        <li>Control de stock</li>
-                        <li>Alertas automáticas</li>
-                        <li>Análisis predictivo</li>
-                    </ul>
                 </div>
 
                 <!-- Fila 2 -->
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                <div class="servicio-card reveal-on-scroll"
+                    style="--servicio-illustration: url('https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=60'); --servicio-accent: #ff5da3;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Experiencias móviles</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Aplicaciones Móviles</h3>
+                        <p>Desarrollo de aplicaciones nativas e híbridas para iOS y Android con las mejores prácticas
+                            del mercado.</p>
+                        <ul class="servicio-features">
+                            <li>Diseño responsivo</li>
+                            <li>Alto rendimiento</li>
+                            <li>Integración con APIs</li>
+                        </ul>
                     </div>
-                    <h3>Aplicaciones Móviles</h3>
-                    <p>Desarrollo de aplicaciones nativas e híbridas para iOS y Android con las mejores prácticas del mercado.</p>
-                    <ul class="servicio-features">
-                        <li>Diseño responsivo</li>
-                        <li>Alto rendimiento</li>
-                        <li>Integración con APIs</li>
-                    </ul>
                 </div>
 
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-chart-line"></i>
+                <div class="servicio-card reveal-on-scroll"
+                    style="--servicio-illustration: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=60'); --servicio-accent: #00c6ff;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Analítica</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Business Intelligence</h3>
+                        <p>Análisis de datos y dashboards interactivos para la toma de decisiones estratégicas.</p>
+                        <ul class="servicio-features">
+                            <li>Reportes personalizados</li>
+                            <li>Análisis predictivo</li>
+                            <li>Visualización de datos</li>
+                        </ul>
                     </div>
-                    <h3>Business Intelligence</h3>
-                    <p>Análisis de datos y dashboards interactivos para la toma de decisiones estratégicas.</p>
-                    <ul class="servicio-features">
-                        <li>Reportes personalizados</li>
-                        <li>Análisis predictivo</li>
-                        <li>Visualización de datos</li>
-                    </ul>
                 </div>
 
-                <div class="servicio-card">
-                    <div class="servicio-icon">
-                        <i class="fas fa-cloud"></i>
+                <div class="servicio-card reveal-on-scroll"
+                    style="--servicio-illustration: url('https://images.unsplash.com/photo-1527430253228-e93688616381?auto=format&fit=crop&w=900&q=60'); --servicio-accent: #64ffda;">
+                    <div class="servicio-visual"></div>
+                    <div class="servicio-body">
+                        <span class="servicio-tag">Infraestructura</span>
+                        <div class="servicio-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Migración a la Nube</h3>
+                        <p>Optimización de infraestructura con soluciones en la nube escalables y seguras.</p>
+                        <ul class="servicio-features">
+                            <li>Almacenamiento seguro</li>
+                            <li>Escalabilidad</li>
+                            <li>Respaldos automáticos</li>
+                        </ul>
                     </div>
-                    <h3>Migración a la Nube</h3>
-                    <p>Optimización de infraestructura con soluciones en la nube escalables y seguras.</p>
-                    <ul class="servicio-features">
-                        <li>Almacenamiento seguro</li>
-                        <li>Escalabilidad</li>
-                        <li>Respaldos automáticos</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -195,14 +249,46 @@
 
     <script>
         // Efecto de transparencia en el navbar al hacer scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
+        const navbar = document.querySelector('.navbar');
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+
+        function handleScrollEffects() {
             if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
+                navbar?.classList.add('scrolled');
+                scrollIndicator?.classList.add('hidden');
             } else {
-                navbar.classList.remove('scrolled');
+                navbar?.classList.remove('scrolled');
+                scrollIndicator?.classList.remove('hidden');
             }
-        });
+        }
+
+        window.addEventListener('scroll', handleScrollEffects);
+        handleScrollEffects();
+
+        // Animación de aparición para las tarjetas de servicios
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            revealElements.forEach((el, index) => {
+                el.style.transitionDelay = `${index * 120}ms`;
+                revealObserver.observe(el);
+            });
+        } else {
+            revealElements.forEach(el => el.classList.add('is-visible'));
+        }
     </script>
 </body>
 
