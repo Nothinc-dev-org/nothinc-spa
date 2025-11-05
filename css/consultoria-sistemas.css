@@ -1,0 +1,257 @@
+/* Estilos para las secciones de consultoría de sistemas */
+
+/* Sección de Beneficios Mejorada */
+.beneficios-consultoria {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #0a0a14 0%, #141422 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.beneficios-consultoria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(24, 96, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.beneficios-consultoria .section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ffffff, #a2c4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(24, 96, 255, 0.1);
+}
+
+.beneficios-consultoria .section-subtitle {
+    color: #a0a8c0;
+    font-size: 2rem;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.beneficio-card {
+    background: rgba(16, 18, 37, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(24, 96, 255, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(24, 96, 255, 0.2);
+    box-shadow: 0 15px 40px rgba(24, 96, 255, 0.15);
+}
+
+.beneficio-card:hover::before {
+    opacity: 1;
+}
+
+.beneficio-icono {
+    font-size: 2.8rem;
+    color: #1860ff;
+    margin-bottom: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: rgba(24, 96, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.beneficio-icono::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(24, 96, 255, 0.3) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.beneficio-card:hover .beneficio-icono {
+    transform: rotateY(180deg);
+    background: rgba(24, 96, 255, 0.2);
+}
+
+.beneficio-card h3 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+}
+
+.beneficio-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #1860ff;
+    transition: width 0.3s ease;
+}
+
+.beneficio-card:hover h3::after {
+    width: 60px;
+}
+
+.beneficio-card p {
+    color: #a0a8c0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 1.2rem 0 0 0;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.beneficio-card:hover p {
+    color: #d0d4e0;
+}
+
+/* Efecto de partículas en hover */
+.beneficio-card::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(24, 96, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: width 0.6s ease-out, height 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.beneficio-card:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+
+/* Sección de Enfoque */
+.enfoque-consultoria {
+    padding: 8rem 0;
+    background: #0a0a14;
+    position: relative;
+}
+
+.pasos-enfoque {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.paso-enfoque {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.paso-enfoque:hover {
+    background: rgba(24, 96, 255, 0.05);
+    transform: translateX(10px);
+}
+
+.numero-paso {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1860ff;
+    min-width: 50px;
+}
+
+/* Sección de Tecnologías Empresariales */
+.tecnologias-empresariales {
+    padding: 8rem 0;
+    background: #0f0f1a;
+}
+
+.tecnologias-empresariales .tecnologias-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.tecnologia-empresarial {
+    text-align: center;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.tecnologia-empresarial img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.tecnologia-empresarial:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .paso-enfoque {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .numero-paso {
+        margin-bottom: 1rem;
+    }
+}
