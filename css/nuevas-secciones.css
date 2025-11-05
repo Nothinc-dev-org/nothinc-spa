@@ -1,0 +1,528 @@
+/* Estilos para las nuevas secciones */
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sección de Servicios Detallados */
+.servicios-detallados {
+    padding: 8rem 0;
+    background: #0a0a14;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.servicio-detallado {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.servicio-detallado:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-color: rgba(24, 96, 255, 0.3);
+}
+
+.servicio-icono {
+    font-size: 2.5rem;
+    color: #1860ff;
+    margin-bottom: 2rem;
+    width: 70px;
+    height: 70px;
+    background: rgba(24, 96, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicio-detallado h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.servicio-detallado p {
+    color: #a0a0a0;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.servicio-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicio-lista li {
+    color: #e0e0e0;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.servicio-lista li::before {
+    content: '✓';
+    color: #1860ff;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Sección de Proceso de Trabajo */
+.proceso-trabajo {
+    padding: 8rem 0;
+    background: #0f0f1a;
+    position: relative;
+}
+
+.proceso-pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.proceso-pasos::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(24, 96, 255, 0.5), transparent);
+    z-index: 1;
+}
+
+.paso {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.paso-numero {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #1860ff, #00f2fe);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 2rem;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(24, 96, 255, 0.3);
+}
+
+.paso h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.paso p {
+    color: #a0a0a0;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+/* Sección de Tecnologías - Estilo Mejorado */
+.tecnologias {
+    padding: 10rem 0;
+    background: linear-gradient(135deg, #0a0a14 0%, #14142a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.tecnologias::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(24, 96, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(0, 242, 254, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.tecnologias .section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #ffffff, #a2c4ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(24, 96, 255, 0.1);
+}
+
+.tecnologias .section-subtitle {
+    color: #a0a0ff;
+    font-size: 1.6rem;
+    max-width: 700px;
+    margin: 0 auto 6rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor para el efecto de borde */
+.tecnologia-categoria {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 1px; /* Espacio para el borde */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido de la tarjeta */
+.tecnologia-contenido {
+    background: rgba(15, 15, 26, 0.8);
+    border-radius: 15px; /* Un poco menos que el contenedor para el borde */
+    padding: 3.5rem 2.5rem;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+/* Efecto de borde que respira */
+.tecnologia-categoria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 2px;
+    background: linear-gradient(45deg, #1860ff, #00f2fe, #1860ff);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    animation: brilloBorde 4s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+@keyframes brilloBorde {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.01);
+        opacity: 0.9;
+    }
+}
+
+/* Efecto hover */
+.tecnologia-categoria:hover::before {
+    animation: brilloBordeHover 2s ease-in-out infinite;
+}
+
+@keyframes brilloBordeHover {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.01);
+        opacity: 1;
+    }
+}
+
+.tecnologia-categoria::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #1860ff, #00f2fe);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.tecnologia-categoria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(24, 96, 255, 0.2);
+}
+
+.tecnologia-categoria:hover::after {
+    opacity: 1;
+    width: 6px;
+}
+
+.tecnologia-categoria:hover::before {
+    opacity: 1;
+}
+
+.tecnologia-categoria h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.tecnologia-categoria h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #1860ff, #00f2fe);
+    border-radius: 3px;
+}
+
+.tecnologias-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.tecnologias-lista span {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(24, 96, 255, 0.08);
+    color: #e0e8ff;
+    font-size: 1.35rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(24, 96, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.tecnologias-lista span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(24, 96, 255, 0.1), rgba(0, 242, 254, 0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tecnologias-lista span:hover {
+    background: rgba(24, 96, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(24, 96, 255, 0.1);
+    color: #ffffff;
+    border-color: rgba(24, 96, 255, 0.3);
+}
+
+.tecnologias-lista span:hover::before {
+    opacity: 1;
+}
+
+/* Efecto de partículas o puntos de fondo */
+.tecnologia-categoria::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(24, 96, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tecnologia-categoria:hover::after {
+    opacity: 1;
+}
+
+/* Sección de Equipo */
+.equipo {
+    padding: 8rem 0;
+    background: #0f0f1a;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.miembro {
+    text-align: center;
+}
+
+.miembro-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2.5rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(24, 96, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.miembro:hover .miembro-img {
+    border-color: #1860ff;
+    transform: scale(1.05);
+}
+
+.miembro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miembro-redes {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.miembro:hover .miembro-redes {
+    transform: translateY(0);
+}
+
+.miembro-redes a {
+    color: #fff;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+}
+
+.miembro-redes a:hover {
+    color: #4d8bff;
+}
+
+.miembro h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.miembro .cargo {
+    color: #4d8bff;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.miembro .descripcion {
+    color: #a0a0a0;
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .servicios-grid,
+    .proceso-pasos,
+    .tecnologias-grid,
+    .equipo-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .proceso-pasos::before {
+        display: none;
+    }
+    
+    .proceso-pasos {
+        gap: 4rem;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.servicio-detallado,
+.paso,
+.tecnologia-categoria,
+.miembro {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.servicio-detallado:nth-child(1) { animation-delay: 0.1s; }
+.servicio-detallado:nth-child(2) { animation-delay: 0.2s; }
+.servicio-detallado:nth-child(3) { animation-delay: 0.3s; }
+
+.paso:nth-child(1) { animation-delay: 0.1s; }
+.paso:nth-child(2) { animation-delay: 0.2s; }
+.paso:nth-child(3) { animation-delay: 0.3s; }
+.paso:nth-child(4) { animation-delay: 0.4s; }
+
+.tecnologia-categoria:nth-child(1) { animation-delay: 0.1s; }
+.tecnologia-categoria:nth-child(2) { animation-delay: 0.2s; }
+.tecnologia-categoria:nth-child(3) { animation-delay: 0.3s; }
+
+.miembro:nth-child(1) { animation-delay: 0.1s; }
+.miembro:nth-child(2) { animation-delay: 0.2s; }
