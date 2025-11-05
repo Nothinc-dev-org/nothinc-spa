@@ -44,6 +44,7 @@
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/nuevas-secciones.css">
 </head>
 
 <body>
@@ -226,10 +227,157 @@
         </div>
     </section>
 
+    <!-- Proceso de Trabajo -->
+    <section class="proceso-trabajo" id="proceso">
+        <div class="container">
+            <h2 class="section-title">Nuestro Proceso</h2>
+            <p class="section-subtitle">Metodología probada para el éxito de tu proyecto</p>
+            
+            <div class="proceso-pasos">
+                <div class="paso">
+                    <div class="paso-numero">1</div>
+                    <h3>Análisis</h3>
+                    <p>Evaluamos tus necesidades y objetivos para ofrecerte la mejor solución.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">2</div>
+                    <h3>Diseño</h3>
+                    <p>Creamos una arquitectura personalizada para tu proyecto.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">3</div>
+                    <h3>Implementación</h3>
+                    <p>Desarrollamos e integramos las soluciones tecnológicas.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-numero">4</div>
+                    <h3>Soporte</h3>
+                    <p>Acompañamiento continuo para garantizar el éxito a largo plazo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías -->
+    <section class="tecnologias" id="tecnologias">
+        <div class="container">
+            <h2 class="section-title">Tecnologías que Utilizamos</h2>
+            <p class="section-subtitle">Trabajamos con las mejores herramientas del mercado</p>
+            
+            <div class="tecnologias-grid">
+                <div class="tecnologia-categoria">
+                    <div class="tecnologia-contenido">
+                        <h3>Cloud</h3>
+                        <div class="tecnologias-lista">
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>Google Cloud</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tecnologia-categoria">
+                    <div class="tecnologia-contenido">
+                        <h3>Bases de Datos</h3>
+                        <div class="tecnologias-lista">
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                            <span>MongoDB</span>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tecnologia-categoria">
+                    <div class="tecnologia-contenido">
+                        <h3>Desarrollo</h3>
+                        <div class="tecnologias-lista">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>.NET</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Portafolio Section -->
     <section class="portafolio-section" id="portafolio">
-        <h2>Portafolio</h2>
-        <p>Estamos trabajando para ofrecerte lo mejor. ¡Próximamente!</p>
+        <div class="portafolio-container">
+            <h2 class="section-title">Nuestros Proyectos</h2>
+            <p class="section-subtitle">Soluciones tecnológicas que han transformado negocios</p>
+            
+            <div class="portafolio-grid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card" data-category="erp">
+                    <div class="proyecto-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Implementación ERP">
+                        <div class="proyecto-overlay">
+                            <h3>Implementación ERP Empresarial</h3>
+                            <p>Gestión integral para cadena minorista</p>
+                            <a href="#" class="ver-mas">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>ERP Empresarial</h4>
+                        <div class="proyecto-tech">
+                            <span>SAP</span>
+                            <span>Oracle</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card" data-category="cloud">
+                    <div class="proyecto-img">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Migración a la Nube">
+                        <div class="proyecto-overlay">
+                            <h3>Migración a la Nube</h3>
+                            <p>Infraestructura escalable en AWS</p>
+                            <a href="#" class="ver-mas">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>Cloud Solutions</h4>
+                        <div class="proyecto-tech">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card" data-category="datos">
+                    <div class="proyecto-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Análisis de Datos">
+                        <div class="proyecto-overlay">
+                            <h3>Business Intelligence</h3>
+                            <p>Plataforma de análisis predictivo</p>
+                            <a href="#" class="ver-mas">Ver Detalles</a>
+                        </div>
+                    </div>
+                    <div class="proyecto-info">
+                        <h4>BI & Analytics</h4>
+                        <div class="proyecto-tech">
+                            <span>Power BI</span>
+                            <span>Tableau</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portafolio-cta">
+                <p>¿Listo para transformar tu negocio con tecnología?</p>
+                <a href="#contacto" class="btn-primario">Solicitar Cotización</a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
