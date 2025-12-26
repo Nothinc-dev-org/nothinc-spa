@@ -1,0 +1,83 @@
+:root {
+    --newyear-gold: #ffd700;
+    --newyear-dark: #000000;
+    --newyear-accent: #bf953f;
+}
+
+.newyear-banner {
+    /* Elegant Gold/Black Gradient */
+    background: linear-gradient(90deg, #000 0%, #1a1a1a 20%, #bf953f 50%, #1a1a1a 80%, #000 100%);
+    color: var(--newyear-gold);
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1100;
+    box-shadow: 0 4px 15px rgba(191, 149, 63, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--newyear-accent);
+}
+
+.newyear-banner i {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.seasonal-particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.confetti {
+    position: absolute;
+    top: -20px;
+    color: var(--newyear-gold);
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+    user-select: none;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+/* Reusing fall animation but can be tweaked if needed */
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) translateX(25px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .newyear-banner {
+        font-size: 0.85rem;
+        padding: 10px 0;
+    }
+}

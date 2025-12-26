@@ -1,0 +1,110 @@
+:root {
+    --christmas-red-dark: #8a001a;
+    --christmas-red-bright: #ff0f38;
+}
+
+.christmas-banner {
+    /* Modern Technological Red: Gradient + Glow */
+    background: linear-gradient(135deg, var(--christmas-red-dark) 0%, var(--christmas-red-bright) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1100;
+    /* Higher than navbar */
+    box-shadow: 0 2px 20px rgba(255, 15, 56, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+/* Subtle tech-style shine effect */
+.christmas-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: skewX(-25deg);
+    animation: shine 6s infinite;
+}
+
+.christmas-banner i {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 200%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+.snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    /* Behind hero content */
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    user-select: none;
+    pointer-events: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    will-change: transform;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-20px) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(105vh) translateX(20px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .christmas-banner {
+        font-size: 0.85rem;
+        padding: 8px 0;
+    }
+}
